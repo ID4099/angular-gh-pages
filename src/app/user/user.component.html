@@ -1,0 +1,13 @@
+<div>
+    <form (submit)="AddUser(newUser)">
+        <input type="text" #newUser>
+        <button>Add User</button>
+    </form>
+    <br>
+    <ul>
+        <li *ngFor='let user of users'>
+            {{user}}
+            <button (click)='mesageUser(user)'>Delete!</button>
+        </li>
+    </ul>
+</div>
